@@ -1,8 +1,6 @@
 * {
     box-sizing: border-box;
 }
-
-
 body {
     margin: 0;
 
@@ -20,12 +18,6 @@ body {
         Verdana,
         sans-serif;
 }
-
-
-/* =========================
-   TASKBAR
-========================= */
-
 .taskbar {
 
     position: fixed;
@@ -59,8 +51,6 @@ body {
 
     z-index: 1000;
 }
-
-
 .os-name {
 
     font-weight: 700;
@@ -72,8 +62,6 @@ body {
 
     border-radius: 16px;
 }
-
-
 .os-message {
 
     background:
@@ -85,8 +73,6 @@ body {
 
     text-align: center;
 }
-
-
 .taskbar-right {
 
     display: flex;
@@ -95,8 +81,6 @@ body {
 
     gap: 10px;
 }
-
-
 .clock {
 
     background:
@@ -108,8 +92,6 @@ body {
 
     white-space: nowrap;
 }
-
-
 .taskbar-button {
 
     border: none;
@@ -125,19 +107,11 @@ body {
 
     cursor: pointer;
 }
-
-
 .taskbar-button:hover {
 
     background:
         rgba(255, 255, 255, 0.25);
 }
-
-
-/* =========================
-   DESKTOP APPS
-========================= */
-
 #desktopApps {
 
     position: absolute;
@@ -151,8 +125,6 @@ body {
 
     gap: 5px;
 }
-
-
 .desktop-icon {
 
     width: 120px;
@@ -169,22 +141,16 @@ body {
 
     user-select: none;
 }
-
-
 .desktop-icon:hover {
 
     background:
         rgba(255, 255, 255, 0.15);
 }
-
-
 .desktop-icon:active {
 
     background:
         rgba(255, 255, 255, 0.25);
 }
-
-
 .desktop-icon img {
 
     width: 64px;
@@ -197,8 +163,6 @@ body {
     filter:
         drop-shadow(0 0 8px black);
 }
-
-
 .desktop-icon p {
 
     margin: 5px 0 0;
@@ -207,12 +171,6 @@ body {
 
     font-size: 14px;
 }
-
-
-/* =========================
-   SHRIYAN HUB ICON
-========================= */
-
 .hub-icon {
 
     width: 64px;
@@ -239,12 +197,6 @@ body {
     filter:
         drop-shadow(0 0 8px black);
 }
-
-
-/* =========================
-   WINDOWS
-========================= */
-
 .window {
 
     position: absolute;
@@ -276,23 +228,11 @@ body {
 
     user-select: none;
 }
-
-
-/* =========================
-   WELCOME
-========================= */
-
 .welcome-window {
 
     top: 180px;
     left: 300px;
 }
-
-
-/* =========================
-   LIBRARY
-========================= */
-
 #libraryWindow {
 
     display: none;
@@ -300,12 +240,6 @@ body {
     top: 150px;
     left: 250px;
 }
-
-
-/* =========================
-   SHRIYAN HUB
-========================= */
-
 #shriyanHubWindow {
 
     display: none;
@@ -321,12 +255,6 @@ body {
     max-height:
         calc(100vh - 110px);
 }
-
-
-/* =========================
-   WINDOW HEADER
-========================= */
-
 .window-header {
 
     width: 100%;
@@ -349,28 +277,20 @@ body {
 
     flex-shrink: 0;
 }
-
-
 .window-header:active {
 
     cursor: grabbing;
 }
-
-
 .window-title {
 
     font-weight: 600;
 }
-
-
 .window-controls {
 
     display: flex;
 
     height: 100%;
 }
-
-
 .window-button {
 
     width: 45px;
@@ -387,25 +307,15 @@ body {
 
     cursor: pointer;
 }
-
-
 .window-button:hover {
 
     background:
         rgba(255, 255, 255, 0.2);
 }
-
-
 .close-button:hover {
 
     background-color: #d9534f;
 }
-
-
-/* =========================
-   NORMAL WINDOW CONTENT
-========================= */
-
 .window-content {
 
     padding: 30px;
@@ -416,20 +326,12 @@ body {
 
     user-select: text;
 }
-
-
 .window-content h1 {
 
     margin-top: 0;
 
     color: #8f9cff;
 }
-
-
-/* =========================
-   HUB CONTENT
-========================= */
-
 .hub-content {
 
     padding: 25px;
@@ -440,8 +342,6 @@ body {
 
     user-select: text;
 }
-
-
 .hub-content h1 {
 
     margin:
@@ -449,20 +349,12 @@ body {
 
     color: #8f9cff;
 }
-
-
 .hub-subtitle {
 
     margin-top: 0;
 
     opacity: 0.7;
 }
-
-
-/* =========================
-   HUB CARDS
-========================= */
-
 .hub-grid {
 
     display: grid;
@@ -474,8 +366,6 @@ body {
 
     margin-top: 20px;
 }
-
-
 .hub-card {
 
     padding: 18px;
@@ -495,8 +385,6 @@ body {
         transform 0.15s,
         background 0.15s;
 }
-
-
 .hub-card:hover {
 
     transform:
@@ -505,14 +393,10 @@ body {
     background:
         rgba(255, 255, 255, 0.15);
 }
-
-
 .hub-card-icon {
 
     font-size: 28px;
 }
-
-
 .hub-card h2 {
 
     margin:
@@ -520,8 +404,6 @@ body {
 
     font-size: 18px;
 }
-
-
 .hub-card p {
 
     margin: 0;
@@ -530,24 +412,14 @@ body {
 
     opacity: 0.7;
 }
-
-
-/* =========================
-   PROJECTS
-========================= */
-
 .projects-section {
 
     margin-top: 25px;
 }
-
-
 .projects-section h2 {
 
     font-size: 20px;
 }
-
-
 .project {
 
     display: flex;
@@ -565,20 +437,14 @@ body {
     background:
         rgba(255, 255, 255, 0.07);
 }
-
-
 .project > span {
 
     font-size: 25px;
 }
-
-
 .project strong {
 
     font-size: 15px;
 }
-
-
 .project p {
 
     margin:
@@ -588,12 +454,6 @@ body {
 
     opacity: 0.6;
 }
-
-
-/* =========================
-   MAXIMIZED
-========================= */
-
 .window.maximized {
 
     top: 80px !important;
@@ -606,12 +466,6 @@ body {
     height:
         calc(100vh - 90px) !important;
 }
-
-
-/* =========================
-   MOBILE
-========================= */
-
 @media (max-width: 650px) {
 
     .os-message {

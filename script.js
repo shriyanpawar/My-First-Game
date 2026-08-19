@@ -1,7 +1,3 @@
-/* =========================
-   LIVE CLOCK
-========================= */
-
 function updateTime() {
 
     const timeElement =
@@ -14,28 +10,12 @@ function updateTime() {
 
     }
 }
-
-
 updateTime();
-
-
 setInterval(
     updateTime,
     1000
 );
-
-
-/* =========================
-   WINDOW Z-INDEX
-========================= */
-
 let biggestIndex = 100;
-
-
-/* =========================
-   MAKE WINDOW DRAGGABLE
-========================= */
-
 function makeDraggable(
     windowElement,
     headerElement
@@ -51,10 +31,7 @@ function makeDraggable(
         "mousedown",
         function (event) {
 
-            /*
-             Don't drag when clicking
-             window buttons.
-            */
+       
 
             if (
                 event.target.closest(
@@ -67,10 +44,7 @@ function makeDraggable(
             }
 
 
-            /*
-             Don't drag maximized
-             windows.
-            */
+        
 
             if (
                 windowElement.classList.contains(
@@ -100,9 +74,7 @@ function makeDraggable(
                 rect.top;
 
 
-            /*
-             Bring window to front.
-            */
+           
 
             biggestIndex++;
 
@@ -111,8 +83,6 @@ function makeDraggable(
 
         }
     );
-
-
     document.addEventListener(
         "mousemove",
         function (event) {
@@ -134,9 +104,7 @@ function makeDraggable(
                 offsetY;
 
 
-            /*
-             Keep window inside screen.
-            */
+            
 
             const maxLeft =
                 window.innerWidth -
@@ -189,12 +157,6 @@ function makeDraggable(
     );
 
 }
-
-
-/* =========================
-   WELCOME WINDOW
-========================= */
-
 const welcomeWindow =
     document.getElementById(
         "welcomeWindow"
@@ -226,14 +188,7 @@ const welcomeMaximize =
     );
 
 
-/*
- Welcome window is visible
- automatically because its CSS
- does not contain display:none.
-*/
 
-
-/* OPEN */
 
 welcomeOpen.addEventListener(
     "click",
@@ -249,10 +204,6 @@ welcomeOpen.addEventListener(
 
     }
 );
-
-
-/* CLOSE */
-
 welcomeClose.addEventListener(
     "click",
     function () {
@@ -262,10 +213,6 @@ welcomeClose.addEventListener(
 
     }
 );
-
-
-/* MINIMIZE */
-
 welcomeMinimize.addEventListener(
     "click",
     function () {
@@ -275,13 +222,7 @@ welcomeMinimize.addEventListener(
 
     }
 );
-
-
-/* MAXIMIZE */
-
 let welcomeMaximized = false;
-
-
 welcomeMaximize.addEventListener(
     "click",
     function () {
@@ -312,21 +253,10 @@ welcomeMaximize.addEventListener(
 
     }
 );
-
-
-/* Make welcome draggable */
-
 makeDraggable(
     welcomeWindow,
     welcomeHeader
 );
-
-
-
-/* =========================
-   LIBRARY OF OHARA
-========================= */
-
 const libraryIcon =
     document.getElementById(
         "libraryIcon"
@@ -358,7 +288,6 @@ const libraryMaximize =
     );
 
 
-/* OPEN */
 
 libraryIcon.addEventListener(
     "click",
@@ -374,10 +303,6 @@ libraryIcon.addEventListener(
 
     }
 );
-
-
-/* CLOSE */
-
 libraryClose.addEventListener(
     "click",
     function () {
@@ -387,10 +312,6 @@ libraryClose.addEventListener(
 
     }
 );
-
-
-/* MINIMIZE */
-
 libraryMinimize.addEventListener(
     "click",
     function () {
@@ -400,13 +321,7 @@ libraryMinimize.addEventListener(
 
     }
 );
-
-
-/* MAXIMIZE */
-
 let libraryMaximized = false;
-
-
 libraryMaximize.addEventListener(
     "click",
     function () {
@@ -437,21 +352,10 @@ libraryMaximize.addEventListener(
 
     }
 );
-
-
-/* Make library draggable */
-
 makeDraggable(
     libraryWindow,
     libraryHeader
 );
-
-
-
-/* =========================
-   SHRIYAN HUB
-========================= */
-
 const shriyanHubIcon =
     document.getElementById(
         "shriyanHubIcon"
@@ -483,8 +387,6 @@ const hubMaximize =
     );
 
 
-/* OPEN HUB */
-
 shriyanHubIcon.addEventListener(
     "click",
     function () {
@@ -499,10 +401,6 @@ shriyanHubIcon.addEventListener(
 
     }
 );
-
-
-/* CLOSE HUB */
-
 hubClose.addEventListener(
     "click",
     function () {
@@ -512,10 +410,6 @@ hubClose.addEventListener(
 
     }
 );
-
-
-/* MINIMIZE HUB */
-
 hubMinimize.addEventListener(
     "click",
     function () {
@@ -525,13 +419,7 @@ hubMinimize.addEventListener(
 
     }
 );
-
-
-/* MAXIMIZE HUB */
-
 let hubMaximized = false;
-
-
 hubMaximize.addEventListener(
     "click",
     function () {
@@ -562,10 +450,6 @@ hubMaximize.addEventListener(
 
     }
 );
-
-
-/* Make Hub draggable */
-
 makeDraggable(
     shriyanHubWindow,
     shriyanHubHeader
