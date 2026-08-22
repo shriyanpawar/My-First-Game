@@ -24,3 +24,10 @@ The project also gave me the opportunity to experiment, make mistakes, redesign 
 
 Thank You
 -By Shriyan
+
+Web Os-2
+
+I upgraded ShriyanOS with several new features to make the desktop more interactive and useful. The new version includes a Calculator app for quick calculations, a Weather app for checking weather information, and a Calendar app for viewing dates and keeping track of important days. I also changed the background to minimalistic windows style.I also organized my code and added comments for specific sections of the operating system.
+
+Thank you
+-Shriyan
