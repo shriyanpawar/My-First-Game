@@ -1,274 +1,870 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
 
     <title>Shriyan OS</title>
 
-    <link rel="stylesheet" href="style.css">
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
+
 </head>
+
 <body>
-    <div class="taskbar">
+
+
+    <!-- ==================================================
+         TOP BAR
+    ================================================== -->
+
+    <div class="topbar">
+
         <div class="os-name">
             Shriyan OS
         </div>
-        <div class="os-message">
+
+        <div class="os-title">
             The One Piece, The One Piece is real
         </div>
-        <div class="taskbar-right">
-            <div id="timeElement" class="clock">
+
+        <div class="topbar-right">
+
+            <div id="timeElement">
                 Loading...
             </div>
-            <button
-                id="welcomeOpen"
-                class="taskbar-button">
+
+            <button id="welcomeOpen">
                 Open
             </button>
+
         </div>
+
     </div>
+
+
+
+    <!-- ==================================================
+         DESKTOP APPS
+    ================================================== -->
+
     <div id="desktopApps">
+
+
+        <!-- CALCULATOR -->
+
         <div
+            class="desktop-icon"
+            id="calculatorIcon"
+        >
+
+            <div class="icon-image">
+                🧮
+            </div>
+
+            <p>
+                Calculator
+            </p>
+
+        </div>
+
+
+
+        <!-- LIBRARY OF OHARA -->
+
+        <div
+            class="desktop-icon"
             id="libraryIcon"
-            class="desktop-icon">
+        >
+
             <img
-                src="images/Library Of Ohara.jpg"
-                alt="Library Of Ohara">
+                src="./images/Library Of Ohara.jpg"
+                class="app-image"
+                alt="Library Of Ohara"
+            >
+
             <p>
                 Library Of Ohara
             </p>
+
         </div>
+
+
+
+        <!-- SHRIYAN HUB -->
+
         <div
-            id="shriyanHubIcon"
-            class="desktop-icon">
-            <div class="hub-icon">
+            class="desktop-icon"
+            id="hubIcon"
+        >
+
+            <div class="icon-image">
                 🚀
             </div>
+
             <p>
                 Shriyan Hub
             </p>
+
         </div>
-    </div>
-    <div
-        id="welcomeWindow"
-        class="window welcome-window">
+
+
+
+        <!-- WEATHER -->
+
         <div
+            class="desktop-icon"
+            id="weatherIcon"
+        >
+
+            <div class="icon-image">
+                🌤️
+            </div>
+
+            <p>
+                Weather
+            </p>
+
+        </div>
+
+
+
+        <!-- CALENDAR -->
+
+        <div
+            class="desktop-icon"
+            id="calendarIcon"
+        >
+
+            <div class="icon-image">
+                📅
+            </div>
+
+            <p>
+                Calendar
+            </p>
+
+        </div>
+
+
+    </div>
+
+
+
+    <!-- ==================================================
+         WELCOME WINDOW
+    ================================================== -->
+
+    <div
+        class="window welcome-window"
+        id="welcomeWindow"
+    >
+
+        <div
+            class="window-header"
             id="welcomeHeader"
-            class="window-header">
+        >
+
             <div class="window-title">
                 🖥️ Welcome
             </div>
+
             <div class="window-controls">
+
                 <button
+                    class="window-button"
                     id="welcomeMinimize"
-                    class="window-button">
+                >
                     −
                 </button>
+
                 <button
+                    class="window-button"
                     id="welcomeMaximize"
-                    class="window-button">
+                >
                     □
                 </button>
+
                 <button
+                    class="window-button close-button"
                     id="welcomeClose"
-                    class="window-button close-button">
+                >
                     ×
                 </button>
+
             </div>
+
         </div>
-        <div class="window-content">
+
+
+        <div class="window-content welcome-content">
+
             <h1>
                 Welcome to My OS
             </h1>
+
             <p>
                 This is my custom operating system.
             </p>
+
             <p>
                 Welcome to Shriyan OS 🚀
             </p>
+
         </div>
+
     </div>
+
+
+
+    <!-- ==================================================
+         CALCULATOR WINDOW
+    ================================================== -->
+
     <div
-        id="libraryWindow"
-        class="window">
+        class="window calculator-window"
+        id="calculatorWindow"
+    >
+
         <div
+            class="window-header"
+            id="calculatorHeader"
+        >
+
+            <div class="window-title">
+                🧮 Calculator
+            </div>
+
+            <div class="window-controls">
+
+                <button
+                    class="window-button"
+                    id="calculatorMinimize"
+                >
+                    −
+                </button>
+
+                <button
+                    class="window-button"
+                    id="calculatorMaximize"
+                >
+                    □
+                </button>
+
+                <button
+                    class="window-button close-button"
+                    id="calculatorClose"
+                >
+                    ×
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <div class="calculator">
+
+            <input
+                type="text"
+                id="calculatorDisplay"
+                value="0"
+                readonly
+            >
+
+            <div class="calculator-buttons">
+
+                <button
+                    class="calculator-button clear"
+                    data-value="C"
+                >
+                    C
+                </button>
+
+                <button
+                    class="calculator-button"
+                    data-value="("
+                >
+                    (
+                </button>
+
+                <button
+                    class="calculator-button"
+                    data-value=")"
+                >
+                    )
+                </button>
+
+                <button
+                    class="calculator-button operator"
+                    data-value="/"
+                >
+                    ÷
+                </button>
+
+
+                <button
+                    class="calculator-button"
+                    data-value="7"
+                >
+                    7
+                </button>
+
+                <button
+                    class="calculator-button"
+                    data-value="8"
+                >
+                    8
+                </button>
+
+                <button
+                    class="calculator-button"
+                    data-value="9"
+                >
+                    9
+                </button>
+
+                <button
+                    class="calculator-button operator"
+                    data-value="*"
+                >
+                    ×
+                </button>
+
+
+                <button
+                    class="calculator-button"
+                    data-value="4"
+                >
+                    4
+                </button>
+
+                <button
+                    class="calculator-button"
+                    data-value="5"
+                >
+                    5
+                </button>
+
+                <button
+                    class="calculator-button"
+                    data-value="6"
+                >
+                    6
+                </button>
+
+                <button
+                    class="calculator-button operator"
+                    data-value="-"
+                >
+                    −
+                </button>
+
+
+                <button
+                    class="calculator-button"
+                    data-value="1"
+                >
+                    1
+                </button>
+
+                <button
+                    class="calculator-button"
+                    data-value="2"
+                >
+                    2
+                </button>
+
+                <button
+                    class="calculator-button"
+                    data-value="3"
+                >
+                    3
+                </button>
+
+                <button
+                    class="calculator-button operator"
+                    data-value="+"
+                >
+                    +
+                </button>
+
+
+                <button
+                    class="calculator-button zero"
+                    data-value="0"
+                >
+                    0
+                </button>
+
+                <button
+                    class="calculator-button"
+                    data-value="."
+                >
+                    .
+                </button>
+
+                <button
+                    class="calculator-button equals"
+                    data-value="="
+                >
+                    =
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- ==================================================
+         LIBRARY OF OHARA WINDOW
+    ================================================== -->
+
+    <div
+        class="window library-window"
+        id="libraryWindow"
+    >
+
+        <div
+            class="window-header"
             id="libraryHeader"
-            class="window-header">
+        >
+
             <div class="window-title">
                 📚 Library Of Ohara
             </div>
+
             <div class="window-controls">
+
                 <button
+                    class="window-button"
                     id="libraryMinimize"
-                    class="window-button">
+                >
                     −
                 </button>
+
                 <button
+                    class="window-button"
                     id="libraryMaximize"
-                    class="window-button">
+                >
                     □
                 </button>
+
                 <button
+                    class="window-button close-button"
                     id="libraryClose"
-                    class="window-button close-button">
+                >
                     ×
                 </button>
+
             </div>
+
         </div>
-        <div class="window-content">
-            <h1>
+
+
+        <div class="window-content library-content">
+
+            <img
+                src="./images/Library Of Ohara.jpg"
+                alt="Library Of Ohara"
+            >
+
+            <h2>
                 Library Of Ohara
-            </h1>
+            </h2>
+
             <p>
                 Welcome to the Library Of Ohara!
             </p>
+
             <p>
-                This is an app running on Shriyan OS.This is a library of information inspired by the library in the anime One Piece. It contains information about the world of One Piece, including characters, locations, and events. You can use this app to learn more about the world of One Piece and its history.
+                A place to explore knowledge, history
+                and the world of One Piece.
             </p>
+
         </div>
+
     </div>
+
+
+
+    <!-- ==================================================
+         SHRIYAN HUB WINDOW
+    ================================================== -->
+
     <div
-        id="shriyanHubWindow"
-        class="window hub-window">
+        class="window hub-window"
+        id="hubWindow"
+    >
+
         <div
-            id="shriyanHubHeader"
-            class="window-header">
+            class="window-header"
+            id="hubHeader"
+        >
+
             <div class="window-title">
                 🚀 Shriyan Hub
             </div>
+
             <div class="window-controls">
+
                 <button
+                    class="window-button"
                     id="hubMinimize"
-                    class="window-button">
+                >
                     −
                 </button>
+
                 <button
+                    class="window-button"
                     id="hubMaximize"
-                    class="window-button">
+                >
                     □
                 </button>
+
                 <button
+                    class="window-button close-button"
                     id="hubClose"
-                    class="window-button close-button">
+                >
                     ×
                 </button>
+
             </div>
+
         </div>
-        <div class="hub-content">
+
+
+        <div class="window-content hub-content">
+
             <h1>
-                Welcome to Shriyan Hub 
+                🚀 Shriyan Hub
             </h1>
-            <p class="hub-subtitle">
-                My personal dashboard on Shriyan OS
+
+            <p>
+                Welcome to my personal space on Shriyan OS.
             </p>
-            <div class="hub-grid">
-                <div class="hub-card">
-                    <div class="hub-card-icon">
-                        🚀
-                    </div>
-                    <h2>
-                        Projects
-                    </h2>
-                    <p>
-                        Things I'm building.
-                    </p>
-                </div>
-                <div class="hub-card">
-                    <div class="hub-card-icon">
-                        ⚽
-                    </div>
-                    <h2>
-                        Football
-                    </h2>
-                    <p>
-                        Training, matches and goals.
-                    </p>
-                </div>
-                <div class="hub-card">
-                    <div class="hub-card-icon">
-                        📚
-                    </div>
-                    <h2>
-                        Study
-                    </h2>
-                    <p>
-                        School and learning.
-                    </p>
-                </div>
-                <div class="hub-card">
-                    <div class="hub-card-icon">
-                        🎮
-                    </div>
-                    <h2>
-                        Gaming
-                    </h2>
-                    <p>
-                        Games and experiments.
-                    </p>
-                </div>
-                <div class="hub-card">
-                    <div class="hub-card-icon">
-                        🎯
-                    </div>
-                    <h2>
-                        Goals
-                    </h2>
-                    <p>
-                        Things I want to accomplish.
-                    </p>
-                </div>
-                <div class="hub-card">
-                    <div class="hub-card-icon">
-                        📊
-                    </div>
-                    <h2>
-                        Stats
-                    </h2>
-                    <p>
-                        My progress and achievements.
-                    </p>
-                </div>
-            </div>
-            <div class="projects-section">
-                <h2>
-                    Recent Projects
-                </h2>
-                <div class="project">
-                    <span>🖥️</span>
-                    <div>
-                        <strong>
-                            Shriyan OS
-                        </strong>
-                        <p>
-                            My personal operating system.
-                        </p>
-                    </div>
-                </div>
-                <div class="project">
-                    <span>🎮</span>
-                    <div>
-                        <strong>
-                            Game Project
-                        </strong>
-                        <p>
-                            A game I'm currently working on.
-                        </p>
-                    </div>
-                </div>
-                <div class="project">
-                    <span>🌐</span>
-                    <div>
-                        <strong>
-                            Personal Website
-                        </strong>
-                        <p>
-                            My website and online projects.
-                        </p>
-                    </div>
-                </div>
-            </div>
+
+            <hr>
+
+            <h2>
+                About Me
+            </h2>
+
+            <p>
+                Welcome to Shriyan Hub!
+            </p>
+
+            <h2>
+                My Projects
+            </h2>
+
+            <p>
+                💻 Shriyan OS
+            </p>
+
+            <p>
+                ⚽ Football
+            </p>
+
+            <p>
+                🛠️ Hardware Projects
+            </p>
+
+            <p>
+                🌐 Web Development
+            </p>
+
+            <p>
+                🚀 More projects coming soon!
+            </p>
+
         </div>
+
     </div>
+
+
+
+    <!-- ==================================================
+         WEATHER WINDOW
+    ================================================== -->
+
+    <div
+        class="window weather-window"
+        id="weatherWindow"
+    >
+
+        <div
+            class="window-header"
+            id="weatherHeader"
+        >
+
+            <div class="window-title">
+                🌤️ Weather
+            </div>
+
+            <div class="window-controls">
+
+                <button
+                    class="window-button"
+                    id="weatherMinimize"
+                >
+                    −
+                </button>
+
+                <button
+                    class="window-button"
+                    id="weatherMaximize"
+                >
+                    □
+                </button>
+
+                <button
+                    class="window-button close-button"
+                    id="weatherClose"
+                >
+                    ×
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <div class="window-content weather-content">
+
+            <h1>
+                🌤️ Weather
+            </h1>
+
+
+            <div class="weather-search">
+
+                <input
+                    type="text"
+                    id="weatherCity"
+                    placeholder="Enter city..."
+                    value="Hyderabad"
+                >
+
+                <button
+                    id="weatherSearchButton"
+                >
+                    Search
+                </button>
+
+            </div>
+
+
+            <p
+                id="weatherStatus"
+                class="weather-status"
+            >
+                Search for a city.
+            </p>
+
+
+            <div class="current-weather">
+
+                <div class="weather-main">
+
+                    <div
+                        id="weatherEmoji"
+                        class="weather-emoji"
+                    >
+                        🌤️
+                    </div>
+
+                    <div>
+
+                        <div
+                            id="weatherTemperature"
+                            class="weather-temperature"
+                        >
+                            --°C
+                        </div>
+
+                        <div id="weatherDescription">
+                            --
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div
+                    id="weatherLocation"
+                    class="weather-location"
+                >
+                    --
+                </div>
+
+
+                <div class="weather-details">
+
+                    <div class="weather-detail">
+                        💧
+                        <span>Humidity</span>
+                        <strong id="weatherHumidity">
+                            --%
+                        </strong>
+                    </div>
+
+                    <div class="weather-detail">
+                        💨
+                        <span>Wind</span>
+                        <strong id="weatherWind">
+                            -- km/h
+                        </strong>
+                    </div>
+
+                    <div class="weather-detail">
+                        🌧️
+                        <span>Rain</span>
+                        <strong id="weatherRain">
+                            --%
+                        </strong>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <h2>
+                5-Day Forecast
+            </h2>
+
+
+            <div
+                id="weatherForecast"
+                class="weather-forecast"
+            >
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- ==================================================
+         CALENDAR WINDOW
+    ================================================== -->
+
+    <div
+        class="window calendar-window"
+        id="calendarWindow"
+    >
+
+        <div
+            class="window-header"
+            id="calendarHeader"
+        >
+
+            <div class="window-title">
+                📅 Calendar
+            </div>
+
+            <div class="window-controls">
+
+                <button
+                    class="window-button"
+                    id="calendarMinimize"
+                >
+                    −
+                </button>
+
+                <button
+                    class="window-button"
+                    id="calendarMaximize"
+                >
+                    □
+                </button>
+
+                <button
+                    class="window-button close-button"
+                    id="calendarClose"
+                >
+                    ×
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <div class="window-content calendar-content">
+
+            <div class="calendar-navigation">
+
+                <button id="previousMonth">
+                    ‹
+                </button>
+
+                <h2 id="calendarMonth">
+                    Month
+                </h2>
+
+                <button id="nextMonth">
+                    ›
+                </button>
+
+            </div>
+
+
+            <div
+                class="calendar-weekdays"
+            >
+
+                <div>Sun</div>
+                <div>Mon</div>
+                <div>Tue</div>
+                <div>Wed</div>
+                <div>Thu</div>
+                <div>Fri</div>
+                <div>Sat</div>
+
+            </div>
+
+
+            <div
+                id="calendarDays"
+                class="calendar-days"
+            >
+            </div>
+
+
+            <button
+                id="todayButton"
+                class="today-button"
+            >
+                Today
+            </button>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- ==================================================
+         JAVASCRIPT
+    ================================================== -->
+
     <script src="script.js"></script>
+
 </body>
+
 </html>
